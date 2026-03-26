@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: ${ORDER_DB_URL:jdbc:postgresql://localhost:5432/order_db}
+    username: ${ORDER_DB_USER:postgres}
+    password: ${ORDER_DB_PASSWORD:postgres}
+  jpa:
+    hibernate:
+      ddl-auto: update
+

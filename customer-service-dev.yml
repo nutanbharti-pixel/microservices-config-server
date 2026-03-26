@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: ${CUSTOMER_DB_URL:jdbc:postgresql://localhost:5432/customer_db}
+    username: ${CUSTOMER_DB_USER:postgres}
+    password: ${CUSTOMER_DB_PASSWORD:postgres}
+  jpa:
+    hibernate:
+      ddl-auto: update
+
